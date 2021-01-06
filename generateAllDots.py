@@ -9,4 +9,4 @@ with open('generatdots.sh', 'w') as script:
         all_xlsxs.append(no_prefix)
     
     for xlsx in all_xlsxs:
-        script.write("python generateDot.py {file}\n".format(file=xlsx))
+        script.write("python generateSmallDots.py {file}\n".format(file=xlsx))
