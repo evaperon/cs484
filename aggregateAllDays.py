@@ -32,7 +32,7 @@ def main():
             temp_dict['label']=label
             graph_data.append(temp_dict)
 
-    graph = pgv.AGraph(directed=True)
+    graph = pgv.AGraph(directed=True, strict=False)
     for edge in graph_data:
         graph.add_edge(str(edge['source']), str(edge['dest']), weight=edge['weight'], label=edge['label'])
 
